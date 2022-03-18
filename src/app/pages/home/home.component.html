@@ -1,0 +1,920 @@
+
+<div class="wrapper">
+
+
+
+<section class="header">
+  <nav
+    class="nav-bar"
+    (scroll)="onscroll()"
+    [ngClass]="navbarfixed ? 'fixed' : 'nofixed'"
+  >
+    <div class="container cont">
+      <span class="logo"
+        >365<span style="color: var(--red)">Wonders</span>
+        <img
+          data-aos="fade-in"
+          data-aos-delay="2000"
+          src="./assets/log.gif"
+          height="40"
+          width="50"
+          alt=""
+      /></span>
+
+      <ul class="nav-links" id="navbar">
+        <div class="menu-close" style="width: 100%">
+          <button (click)="openToggle()">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.5999 11.42C35.8199 10.64 34.5599 10.64 33.7799 11.42L23.9999 21.18L14.2199 11.4C13.4399 10.62 12.1799 10.62 11.3999 11.4C10.6199 12.18 10.6199 13.44 11.3999 14.22L21.1799 24L11.3999 33.78C10.6199 34.56 10.6199 35.82 11.3999 36.6C12.1799 37.38 13.4399 37.38 14.2199 36.6L23.9999 26.82L33.7799 36.6C34.5599 37.38 35.8199 37.38 36.5999 36.6C37.3799 35.82 37.3799 34.56 36.5999 33.78L26.8199 24L36.5999 14.22C37.3599 13.46 37.3599 12.18 36.5999 11.42V11.42Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#2">Services</a></li>
+        <li><a href="#">Tours</a></li>
+
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <button class="menu" (click)="openToggle()">
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 72 48"
+          fill="pink"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48H72V40H0V48ZM0 28H72V20H0V28ZM0 0V8H72V0H0Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container text-cont">
+    <section class="texts" data-aos="fade-up" data-aos-duration="1000">
+      <h3>Welcome</h3>
+      <h1>We do the planning for you</h1>
+      <h4>Let’s book the vacation of your dreams!</h4>
+
+      <div class="book-button">
+        <button class="button">Book Now</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="scroll-button">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 50 50"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="25" cy="25" r="25" fill="#C4C4C4" fill-opacity="0.44" />
+      <path
+        d="M19.2625 20.7375L25 26.4625L30.7375 20.7375L32.5 22.5L25 30L17.5 22.5L19.2625 20.7375Z"
+        fill="#F3F3F3"
+      />
+    </svg>
+  </div>
+  <div class="phone" data-aos="fade-up" data-aos-duration="2000">
+    <svg
+      data-tooltip="hehe"
+      width="90"
+      height="90"
+      viewBox="0 0 99 98"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="phone-icon"
+    >
+      <g filter="url(#filter0_d_20_8)">
+        <ellipse
+          cx="49.5"
+          cy="45"
+          rx="45.5"
+          ry="45"
+          fill="white"
+          fill-opacity="1"
+        />
+      </g>
+      <path
+        class="phone-svg"
+        d="M38.7917 42.4792C41.7917 48.375 46.625 53.1875 52.5208 56.2083L57.1042 51.625C57.6667 51.0625 58.5 50.875 59.2292 51.125C61.5625 51.8958 64.0833 52.3125 66.6667 52.3125C67.8125 52.3125 68.75 53.25 68.75 54.3958V61.6667C68.75 62.8125 67.8125 63.75 66.6667 63.75C47.1042 63.75 31.25 47.8958 31.25 28.3333C31.25 27.1875 32.1875 26.25 33.3333 26.25H40.625C41.7708 26.25 42.7083 27.1875 42.7083 28.3333C42.7083 30.9375 43.125 33.4375 43.8958 35.7708C44.125 36.5 43.9583 37.3125 43.375 37.8958L38.7917 42.4792Z"
+        fill="#CD0E0E"
+      />
+      <defs>
+        <filter
+          id="filter0_d_20_8"
+          x="0"
+          y="0"
+          width="99"
+          height="98"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy="4" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_20_8"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_20_8"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+<section class="sect2" id="2">
+  <header class="section2-header" data-aos="fade-up" data-aos-duration="1000">
+    <h1>Services</h1>
+  </header>
+
+  <div class="container">
+    <br />
+    <br />
+    <br />
+
+    <div class="row">
+      <div
+        class="col text-center flex"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <img class="services-img" src="./assets/services1.png" alt="" />
+
+        <h2>
+          Unique life <br />
+          experiences
+        </h2>
+        <p>
+          We specialize in offering once in a lifetime experiences that will
+          create lasting memories.
+        </p>
+      </div>
+      <div
+        class="col text-center flex"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <img class="services-img" src="./assets/services1.png" alt="" />
+
+        <h2>
+          Personalized <br />
+          trips
+        </h2>
+        <p>
+          Travel is different for everyone. We want to make sure that you are
+          getting the most from your trip by crafting the dream vacation that is
+          perfect for you.
+        </p>
+      </div>
+      <div
+        class="col text-center flex"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <img class="services-img" src="./assets/services2.png" alt="" />
+
+        <h2>Incredible detail and services</h2>
+        <p>
+          We’ve got your back. In the event something does come up. Our team is
+          here to help make sure your trip is not interrupted.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section2-footer">
+    <a href="">See all Services >></a>
+  </div>
+</section>
+
+<section class="sect3">
+  <div class="shade">
+    <div class="container">
+      <div class="promotions">
+        <h3 data-aos="fade-down">HOT PROMO</h3>
+
+        <h1 data-aos="fade-left">4D3N Boracay Tour</h1>
+
+        <p data-aos="fade-right">P 8,999 / 2 Persons</p>
+
+        <button type="button" class="book-button">BOOK NOW</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sect4">
+  <header class="section2-header" data-aos="fade-up" data-aos-duration="1000">
+    <h1>TOURS</h1>
+  </header>
+
+  <div class="container">
+    <br />
+    <br />
+    <br />
+
+    <div class="row" data-aos="fade-up" data-aos-duration="1000">
+      <div class="sect4-header">
+        <h1>Local Tour Promos</h1>
+
+        <p>
+          We have a wide range of local tours that will make your trip a
+          memorable one.
+        </p>
+        
+      </div>
+      <div class="media-scroll">
+        <div class="media-item">
+          <div class="card">
+            <img src="./assets/tours/tour1.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Boracay Tour</h5>
+  
+              <ul class="list">
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9167 2.83325C14.4342 2.83325 10 7.26742 10 12.7499C10 15.2149 10.7083 17.5241 11.9975 19.6066C13.3433 21.7883 15.1142 23.6583 16.4742 25.8399C17.14 26.9024 17.6217 27.8941 18.1317 29.0416C18.5 29.8208 18.7975 31.1666 19.9167 31.1666C21.0358 31.1666 21.3333 29.8208 21.6875 29.0416C22.2117 27.8941 22.6792 26.9024 23.345 25.8399C24.705 23.6724 26.4758 21.8024 27.8217 19.6066C29.125 17.5241 29.8333 15.2149 29.8333 12.7499C29.8333 7.26742 25.3992 2.83325 19.9167 2.83325ZM19.9167 16.6458C17.9617 16.6458 16.375 15.0591 16.375 13.1041C16.375 11.1491 17.9617 9.56242 19.9167 9.56242C21.8717 9.56242 23.4583 11.1491 23.4583 13.1041C23.4583 15.0591 21.8717 16.6458 19.9167 16.6458Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>Boracay</span>
+                </li>
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5833 24.0833C15.5833 24.8625 16.2208 25.5 17 25.5C17.7792 25.5 18.4167 24.8625 18.4167 24.0833C18.4167 23.3042 17.7792 22.6667 17 22.6667C16.2208 22.6667 15.5833 23.3042 15.5833 24.0833ZM15.5833 4.25V9.91667H18.4167V7.19667C23.2192 7.89083 26.9167 11.9992 26.9167 17C26.9167 22.4825 22.4825 26.9167 17 26.9167C11.5175 26.9167 7.08333 22.4825 7.08333 17C7.08333 14.62 7.91917 12.4383 9.32167 10.7383L17 18.4167L18.9975 16.4192L9.36417 6.78583V6.81417C6.26167 9.1375 4.25 12.8208 4.25 17C4.25 24.0408 9.945 29.75 17 29.75C24.0408 29.75 29.75 24.0408 29.75 17C29.75 9.95917 24.0408 4.25 17 4.25H15.5833ZM25.5 17C25.5 16.2208 24.8625 15.5833 24.0833 15.5833C23.3042 15.5833 22.6667 16.2208 22.6667 17C22.6667 17.7792 23.3042 18.4167 24.0833 18.4167C24.8625 18.4167 25.5 17.7792 25.5 17ZM8.5 17C8.5 17.7792 9.1375 18.4167 9.91667 18.4167C10.6958 18.4167 11.3333 17.7792 11.3333 17C11.3333 16.2208 10.6958 15.5833 9.91667 15.5833C9.1375 15.5833 8.5 16.2208 8.5 17Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>3 days-2 nights</span>
+                </li>
+              </ul>
+              <div class="book-button">
+                <button type="button" class="book-button">View</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="media-item">
+          <div class="card">
+            <img src="./assets/tours/tour1.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Boracay Tour</h5>
+  
+              <ul class="list">
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9167 2.83325C14.4342 2.83325 10 7.26742 10 12.7499C10 15.2149 10.7083 17.5241 11.9975 19.6066C13.3433 21.7883 15.1142 23.6583 16.4742 25.8399C17.14 26.9024 17.6217 27.8941 18.1317 29.0416C18.5 29.8208 18.7975 31.1666 19.9167 31.1666C21.0358 31.1666 21.3333 29.8208 21.6875 29.0416C22.2117 27.8941 22.6792 26.9024 23.345 25.8399C24.705 23.6724 26.4758 21.8024 27.8217 19.6066C29.125 17.5241 29.8333 15.2149 29.8333 12.7499C29.8333 7.26742 25.3992 2.83325 19.9167 2.83325ZM19.9167 16.6458C17.9617 16.6458 16.375 15.0591 16.375 13.1041C16.375 11.1491 17.9617 9.56242 19.9167 9.56242C21.8717 9.56242 23.4583 11.1491 23.4583 13.1041C23.4583 15.0591 21.8717 16.6458 19.9167 16.6458Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>Boracay</span>
+                </li>
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5833 24.0833C15.5833 24.8625 16.2208 25.5 17 25.5C17.7792 25.5 18.4167 24.8625 18.4167 24.0833C18.4167 23.3042 17.7792 22.6667 17 22.6667C16.2208 22.6667 15.5833 23.3042 15.5833 24.0833ZM15.5833 4.25V9.91667H18.4167V7.19667C23.2192 7.89083 26.9167 11.9992 26.9167 17C26.9167 22.4825 22.4825 26.9167 17 26.9167C11.5175 26.9167 7.08333 22.4825 7.08333 17C7.08333 14.62 7.91917 12.4383 9.32167 10.7383L17 18.4167L18.9975 16.4192L9.36417 6.78583V6.81417C6.26167 9.1375 4.25 12.8208 4.25 17C4.25 24.0408 9.945 29.75 17 29.75C24.0408 29.75 29.75 24.0408 29.75 17C29.75 9.95917 24.0408 4.25 17 4.25H15.5833ZM25.5 17C25.5 16.2208 24.8625 15.5833 24.0833 15.5833C23.3042 15.5833 22.6667 16.2208 22.6667 17C22.6667 17.7792 23.3042 18.4167 24.0833 18.4167C24.8625 18.4167 25.5 17.7792 25.5 17ZM8.5 17C8.5 17.7792 9.1375 18.4167 9.91667 18.4167C10.6958 18.4167 11.3333 17.7792 11.3333 17C11.3333 16.2208 10.6958 15.5833 9.91667 15.5833C9.1375 15.5833 8.5 16.2208 8.5 17Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>3 days-2 nights</span>
+                </li>
+              </ul>
+              <div class="book-button">
+                <button type="button" class="book-button">View</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="media-item">
+          <div class="card">
+            <img src="./assets/tours/tour1.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Boracay Tour</h5>
+  
+              <ul class="list">
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9167 2.83325C14.4342 2.83325 10 7.26742 10 12.7499C10 15.2149 10.7083 17.5241 11.9975 19.6066C13.3433 21.7883 15.1142 23.6583 16.4742 25.8399C17.14 26.9024 17.6217 27.8941 18.1317 29.0416C18.5 29.8208 18.7975 31.1666 19.9167 31.1666C21.0358 31.1666 21.3333 29.8208 21.6875 29.0416C22.2117 27.8941 22.6792 26.9024 23.345 25.8399C24.705 23.6724 26.4758 21.8024 27.8217 19.6066C29.125 17.5241 29.8333 15.2149 29.8333 12.7499C29.8333 7.26742 25.3992 2.83325 19.9167 2.83325ZM19.9167 16.6458C17.9617 16.6458 16.375 15.0591 16.375 13.1041C16.375 11.1491 17.9617 9.56242 19.9167 9.56242C21.8717 9.56242 23.4583 11.1491 23.4583 13.1041C23.4583 15.0591 21.8717 16.6458 19.9167 16.6458Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>Boracay</span>
+                </li>
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5833 24.0833C15.5833 24.8625 16.2208 25.5 17 25.5C17.7792 25.5 18.4167 24.8625 18.4167 24.0833C18.4167 23.3042 17.7792 22.6667 17 22.6667C16.2208 22.6667 15.5833 23.3042 15.5833 24.0833ZM15.5833 4.25V9.91667H18.4167V7.19667C23.2192 7.89083 26.9167 11.9992 26.9167 17C26.9167 22.4825 22.4825 26.9167 17 26.9167C11.5175 26.9167 7.08333 22.4825 7.08333 17C7.08333 14.62 7.91917 12.4383 9.32167 10.7383L17 18.4167L18.9975 16.4192L9.36417 6.78583V6.81417C6.26167 9.1375 4.25 12.8208 4.25 17C4.25 24.0408 9.945 29.75 17 29.75C24.0408 29.75 29.75 24.0408 29.75 17C29.75 9.95917 24.0408 4.25 17 4.25H15.5833ZM25.5 17C25.5 16.2208 24.8625 15.5833 24.0833 15.5833C23.3042 15.5833 22.6667 16.2208 22.6667 17C22.6667 17.7792 23.3042 18.4167 24.0833 18.4167C24.8625 18.4167 25.5 17.7792 25.5 17ZM8.5 17C8.5 17.7792 9.1375 18.4167 9.91667 18.4167C10.6958 18.4167 11.3333 17.7792 11.3333 17C11.3333 16.2208 10.6958 15.5833 9.91667 15.5833C9.1375 15.5833 8.5 16.2208 8.5 17Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>3 days-2 nights</span>
+                </li>
+              </ul>
+              <div class="book-button">
+                <button type="button" class="book-button">View</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="media-item">
+          <div class="card">
+            <img src="./assets/tours/tour1.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Boracay Tour</h5>
+  
+              <ul class="list">
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9167 2.83325C14.4342 2.83325 10 7.26742 10 12.7499C10 15.2149 10.7083 17.5241 11.9975 19.6066C13.3433 21.7883 15.1142 23.6583 16.4742 25.8399C17.14 26.9024 17.6217 27.8941 18.1317 29.0416C18.5 29.8208 18.7975 31.1666 19.9167 31.1666C21.0358 31.1666 21.3333 29.8208 21.6875 29.0416C22.2117 27.8941 22.6792 26.9024 23.345 25.8399C24.705 23.6724 26.4758 21.8024 27.8217 19.6066C29.125 17.5241 29.8333 15.2149 29.8333 12.7499C29.8333 7.26742 25.3992 2.83325 19.9167 2.83325ZM19.9167 16.6458C17.9617 16.6458 16.375 15.0591 16.375 13.1041C16.375 11.1491 17.9617 9.56242 19.9167 9.56242C21.8717 9.56242 23.4583 11.1491 23.4583 13.1041C23.4583 15.0591 21.8717 16.6458 19.9167 16.6458Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>Boracay</span>
+                </li>
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5833 24.0833C15.5833 24.8625 16.2208 25.5 17 25.5C17.7792 25.5 18.4167 24.8625 18.4167 24.0833C18.4167 23.3042 17.7792 22.6667 17 22.6667C16.2208 22.6667 15.5833 23.3042 15.5833 24.0833ZM15.5833 4.25V9.91667H18.4167V7.19667C23.2192 7.89083 26.9167 11.9992 26.9167 17C26.9167 22.4825 22.4825 26.9167 17 26.9167C11.5175 26.9167 7.08333 22.4825 7.08333 17C7.08333 14.62 7.91917 12.4383 9.32167 10.7383L17 18.4167L18.9975 16.4192L9.36417 6.78583V6.81417C6.26167 9.1375 4.25 12.8208 4.25 17C4.25 24.0408 9.945 29.75 17 29.75C24.0408 29.75 29.75 24.0408 29.75 17C29.75 9.95917 24.0408 4.25 17 4.25H15.5833ZM25.5 17C25.5 16.2208 24.8625 15.5833 24.0833 15.5833C23.3042 15.5833 22.6667 16.2208 22.6667 17C22.6667 17.7792 23.3042 18.4167 24.0833 18.4167C24.8625 18.4167 25.5 17.7792 25.5 17ZM8.5 17C8.5 17.7792 9.1375 18.4167 9.91667 18.4167C10.6958 18.4167 11.3333 17.7792 11.3333 17C11.3333 16.2208 10.6958 15.5833 9.91667 15.5833C9.1375 15.5833 8.5 16.2208 8.5 17Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>3 days-2 nights</span>
+                </li>
+              </ul>
+              <div class="book-button">
+                <button type="button" class="book-button">View</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="media-item">
+          <div style="width: max-content;">
+            <a href="" style="color: var(--red);">See all Local Promos >></a>
+
+
+          </div>
+
+
+        </div>
+       
+
+
+      </div>
+
+      
+      
+      
+
+      
+    </div>
+    <div
+      class="row"
+      style="margin-top: 100px"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="sect4-header">
+        <h1>International Tour Promos</h1>
+        <p>
+          We have a wide range of local tours that will make your trip a
+          memorable one.
+        </p>
+        
+
+        
+
+        
+      </div>
+
+      <div class="media-scroll">
+        <div class="media-item">
+          <div class="card">
+            <img src="./assets/tours/tour1.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Boracay Tour</h5>
+  
+              <ul class="list">
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9167 2.83325C14.4342 2.83325 10 7.26742 10 12.7499C10 15.2149 10.7083 17.5241 11.9975 19.6066C13.3433 21.7883 15.1142 23.6583 16.4742 25.8399C17.14 26.9024 17.6217 27.8941 18.1317 29.0416C18.5 29.8208 18.7975 31.1666 19.9167 31.1666C21.0358 31.1666 21.3333 29.8208 21.6875 29.0416C22.2117 27.8941 22.6792 26.9024 23.345 25.8399C24.705 23.6724 26.4758 21.8024 27.8217 19.6066C29.125 17.5241 29.8333 15.2149 29.8333 12.7499C29.8333 7.26742 25.3992 2.83325 19.9167 2.83325ZM19.9167 16.6458C17.9617 16.6458 16.375 15.0591 16.375 13.1041C16.375 11.1491 17.9617 9.56242 19.9167 9.56242C21.8717 9.56242 23.4583 11.1491 23.4583 13.1041C23.4583 15.0591 21.8717 16.6458 19.9167 16.6458Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>Boracay</span>
+                </li>
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5833 24.0833C15.5833 24.8625 16.2208 25.5 17 25.5C17.7792 25.5 18.4167 24.8625 18.4167 24.0833C18.4167 23.3042 17.7792 22.6667 17 22.6667C16.2208 22.6667 15.5833 23.3042 15.5833 24.0833ZM15.5833 4.25V9.91667H18.4167V7.19667C23.2192 7.89083 26.9167 11.9992 26.9167 17C26.9167 22.4825 22.4825 26.9167 17 26.9167C11.5175 26.9167 7.08333 22.4825 7.08333 17C7.08333 14.62 7.91917 12.4383 9.32167 10.7383L17 18.4167L18.9975 16.4192L9.36417 6.78583V6.81417C6.26167 9.1375 4.25 12.8208 4.25 17C4.25 24.0408 9.945 29.75 17 29.75C24.0408 29.75 29.75 24.0408 29.75 17C29.75 9.95917 24.0408 4.25 17 4.25H15.5833ZM25.5 17C25.5 16.2208 24.8625 15.5833 24.0833 15.5833C23.3042 15.5833 22.6667 16.2208 22.6667 17C22.6667 17.7792 23.3042 18.4167 24.0833 18.4167C24.8625 18.4167 25.5 17.7792 25.5 17ZM8.5 17C8.5 17.7792 9.1375 18.4167 9.91667 18.4167C10.6958 18.4167 11.3333 17.7792 11.3333 17C11.3333 16.2208 10.6958 15.5833 9.91667 15.5833C9.1375 15.5833 8.5 16.2208 8.5 17Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>3 days-2 nights</span>
+                </li>
+              </ul>
+              <div class="book-button">
+                <button type="button" class="book-button">View</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="media-item">
+          <div class="card">
+            <img src="./assets/tours/tour1.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Boracay Tour</h5>
+  
+              <ul class="list">
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9167 2.83325C14.4342 2.83325 10 7.26742 10 12.7499C10 15.2149 10.7083 17.5241 11.9975 19.6066C13.3433 21.7883 15.1142 23.6583 16.4742 25.8399C17.14 26.9024 17.6217 27.8941 18.1317 29.0416C18.5 29.8208 18.7975 31.1666 19.9167 31.1666C21.0358 31.1666 21.3333 29.8208 21.6875 29.0416C22.2117 27.8941 22.6792 26.9024 23.345 25.8399C24.705 23.6724 26.4758 21.8024 27.8217 19.6066C29.125 17.5241 29.8333 15.2149 29.8333 12.7499C29.8333 7.26742 25.3992 2.83325 19.9167 2.83325ZM19.9167 16.6458C17.9617 16.6458 16.375 15.0591 16.375 13.1041C16.375 11.1491 17.9617 9.56242 19.9167 9.56242C21.8717 9.56242 23.4583 11.1491 23.4583 13.1041C23.4583 15.0591 21.8717 16.6458 19.9167 16.6458Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>Boracay</span>
+                </li>
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5833 24.0833C15.5833 24.8625 16.2208 25.5 17 25.5C17.7792 25.5 18.4167 24.8625 18.4167 24.0833C18.4167 23.3042 17.7792 22.6667 17 22.6667C16.2208 22.6667 15.5833 23.3042 15.5833 24.0833ZM15.5833 4.25V9.91667H18.4167V7.19667C23.2192 7.89083 26.9167 11.9992 26.9167 17C26.9167 22.4825 22.4825 26.9167 17 26.9167C11.5175 26.9167 7.08333 22.4825 7.08333 17C7.08333 14.62 7.91917 12.4383 9.32167 10.7383L17 18.4167L18.9975 16.4192L9.36417 6.78583V6.81417C6.26167 9.1375 4.25 12.8208 4.25 17C4.25 24.0408 9.945 29.75 17 29.75C24.0408 29.75 29.75 24.0408 29.75 17C29.75 9.95917 24.0408 4.25 17 4.25H15.5833ZM25.5 17C25.5 16.2208 24.8625 15.5833 24.0833 15.5833C23.3042 15.5833 22.6667 16.2208 22.6667 17C22.6667 17.7792 23.3042 18.4167 24.0833 18.4167C24.8625 18.4167 25.5 17.7792 25.5 17ZM8.5 17C8.5 17.7792 9.1375 18.4167 9.91667 18.4167C10.6958 18.4167 11.3333 17.7792 11.3333 17C11.3333 16.2208 10.6958 15.5833 9.91667 15.5833C9.1375 15.5833 8.5 16.2208 8.5 17Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>3 days-2 nights</span>
+                </li>
+              </ul>
+              <div class="book-button">
+                <button type="button" class="book-button">View</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="media-item">
+          <div class="card">
+            <img src="./assets/tours/tour1.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Boracay Tour</h5>
+  
+              <ul class="list">
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9167 2.83325C14.4342 2.83325 10 7.26742 10 12.7499C10 15.2149 10.7083 17.5241 11.9975 19.6066C13.3433 21.7883 15.1142 23.6583 16.4742 25.8399C17.14 26.9024 17.6217 27.8941 18.1317 29.0416C18.5 29.8208 18.7975 31.1666 19.9167 31.1666C21.0358 31.1666 21.3333 29.8208 21.6875 29.0416C22.2117 27.8941 22.6792 26.9024 23.345 25.8399C24.705 23.6724 26.4758 21.8024 27.8217 19.6066C29.125 17.5241 29.8333 15.2149 29.8333 12.7499C29.8333 7.26742 25.3992 2.83325 19.9167 2.83325ZM19.9167 16.6458C17.9617 16.6458 16.375 15.0591 16.375 13.1041C16.375 11.1491 17.9617 9.56242 19.9167 9.56242C21.8717 9.56242 23.4583 11.1491 23.4583 13.1041C23.4583 15.0591 21.8717 16.6458 19.9167 16.6458Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>Boracay</span>
+                </li>
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5833 24.0833C15.5833 24.8625 16.2208 25.5 17 25.5C17.7792 25.5 18.4167 24.8625 18.4167 24.0833C18.4167 23.3042 17.7792 22.6667 17 22.6667C16.2208 22.6667 15.5833 23.3042 15.5833 24.0833ZM15.5833 4.25V9.91667H18.4167V7.19667C23.2192 7.89083 26.9167 11.9992 26.9167 17C26.9167 22.4825 22.4825 26.9167 17 26.9167C11.5175 26.9167 7.08333 22.4825 7.08333 17C7.08333 14.62 7.91917 12.4383 9.32167 10.7383L17 18.4167L18.9975 16.4192L9.36417 6.78583V6.81417C6.26167 9.1375 4.25 12.8208 4.25 17C4.25 24.0408 9.945 29.75 17 29.75C24.0408 29.75 29.75 24.0408 29.75 17C29.75 9.95917 24.0408 4.25 17 4.25H15.5833ZM25.5 17C25.5 16.2208 24.8625 15.5833 24.0833 15.5833C23.3042 15.5833 22.6667 16.2208 22.6667 17C22.6667 17.7792 23.3042 18.4167 24.0833 18.4167C24.8625 18.4167 25.5 17.7792 25.5 17ZM8.5 17C8.5 17.7792 9.1375 18.4167 9.91667 18.4167C10.6958 18.4167 11.3333 17.7792 11.3333 17C11.3333 16.2208 10.6958 15.5833 9.91667 15.5833C9.1375 15.5833 8.5 16.2208 8.5 17Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>3 days-2 nights</span>
+                </li>
+              </ul>
+              <div class="book-button">
+                <button type="button" class="book-button">View</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="media-item">
+          <div class="card">
+            <img src="./assets/tours/tour1.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Boracay Tour</h5>
+  
+              <ul class="list">
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9167 2.83325C14.4342 2.83325 10 7.26742 10 12.7499C10 15.2149 10.7083 17.5241 11.9975 19.6066C13.3433 21.7883 15.1142 23.6583 16.4742 25.8399C17.14 26.9024 17.6217 27.8941 18.1317 29.0416C18.5 29.8208 18.7975 31.1666 19.9167 31.1666C21.0358 31.1666 21.3333 29.8208 21.6875 29.0416C22.2117 27.8941 22.6792 26.9024 23.345 25.8399C24.705 23.6724 26.4758 21.8024 27.8217 19.6066C29.125 17.5241 29.8333 15.2149 29.8333 12.7499C29.8333 7.26742 25.3992 2.83325 19.9167 2.83325ZM19.9167 16.6458C17.9617 16.6458 16.375 15.0591 16.375 13.1041C16.375 11.1491 17.9617 9.56242 19.9167 9.56242C21.8717 9.56242 23.4583 11.1491 23.4583 13.1041C23.4583 15.0591 21.8717 16.6458 19.9167 16.6458Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>Boracay</span>
+                </li>
+                <li>
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5833 24.0833C15.5833 24.8625 16.2208 25.5 17 25.5C17.7792 25.5 18.4167 24.8625 18.4167 24.0833C18.4167 23.3042 17.7792 22.6667 17 22.6667C16.2208 22.6667 15.5833 23.3042 15.5833 24.0833ZM15.5833 4.25V9.91667H18.4167V7.19667C23.2192 7.89083 26.9167 11.9992 26.9167 17C26.9167 22.4825 22.4825 26.9167 17 26.9167C11.5175 26.9167 7.08333 22.4825 7.08333 17C7.08333 14.62 7.91917 12.4383 9.32167 10.7383L17 18.4167L18.9975 16.4192L9.36417 6.78583V6.81417C6.26167 9.1375 4.25 12.8208 4.25 17C4.25 24.0408 9.945 29.75 17 29.75C24.0408 29.75 29.75 24.0408 29.75 17C29.75 9.95917 24.0408 4.25 17 4.25H15.5833ZM25.5 17C25.5 16.2208 24.8625 15.5833 24.0833 15.5833C23.3042 15.5833 22.6667 16.2208 22.6667 17C22.6667 17.7792 23.3042 18.4167 24.0833 18.4167C24.8625 18.4167 25.5 17.7792 25.5 17ZM8.5 17C8.5 17.7792 9.1375 18.4167 9.91667 18.4167C10.6958 18.4167 11.3333 17.7792 11.3333 17C11.3333 16.2208 10.6958 15.5833 9.91667 15.5833C9.1375 15.5833 8.5 16.2208 8.5 17Z"
+                      fill="var(--red)"
+                    />
+                  </svg>
+                  <span>3 days-2 nights</span>
+                </li>
+              </ul>
+              <div class="book-button">
+                <button type="button" class="book-button">View</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="media-item">
+          <div style="width: max-content;">
+            <a href="" style="color: var(--red);">See all International Promos >></a>
+
+
+          </div>
+
+
+        </div>
+       
+
+
+      </div>
+
+      
+      
+      
+      
+    </div>
+  </div>
+</section>
+<section class="sect5">
+  <header class="section2-header" data-aos="fade-up" data-aos-duration="1000">
+    <h1>About Us</h1>
+  </header>
+  <div class="container">
+    <br />
+    <br />
+    <br />
+
+    <div class="row">
+      
+      <div class="col-md-6">
+        <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+          <h2>We are Travel Agency</h2>
+          <p>
+            Check out our best Promotion tours <a href="">here.</a>
+          </p>
+          <hr style=" width:100px;border: 5px solid #c01b1e;">
+          <p>
+            Dynamically drive alternative channels for granular paradigms. Holisticly benchmark granular collaboration and idea-sharing before visionary solutions.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            euismod, nisl eget consectetur sagittis, nisl nunc consectetur
+            sapien, eget tincidunt nisl nunc eget lorem.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-img" data-aos="fade-left" data-aos-duration="1000">
+          <img src="./assets/boracay.jpg" width="100%" alt="" />
+        </div>
+      </div>
+    </div>
+
+
+    
+  </div>
+</section>
+
+<section class="sect6">
+  <header class="section2-header" data-aos="fade-up" data-aos-duration="1000">
+    <h1>Why Choose Us</h1>
+  </header>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col my-2">
+        <div class="mat-card" data-aos="fade-down" data-aos-duration="1000">
+          <h2>Our Background</h2>
+          <p>We are people who are wll-versedin the fun and rigors of travelling. Out travel agency came together to help other people plan and book their dream vacation. We have over 40 years of travel planning between us!</p>
+  
+        </div>
+
+      </div>
+      
+    </div>
+
+
+    <div class="row">
+      <div class="col my-2">
+        <div class="mat-card" data-aos="fade-right" data-aos-duration="1000">
+          <h2>Our Services</h2>
+          <p>We are people who are wll-versedin the fun and rigors of travelling. Out travel agency came together to help other people plan and book their dream vacation. We have over 40 years of travel planning between us!</p>
+  
+        </div>
+
+      </div>
+      <div class="col my-2">
+        <div class="mat-card" data-aos="fade-left" data-aos-duration="1000">
+          <h2>Satisfaction Guaranteed</h2>
+          <p>We are people who are wll-versedin the fun and rigors of travelling. Out travel agency came together to help other people plan and book their dream vacation. We have over 40 years of travel planning between us!</p>
+  
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="sect7">
+  <header class="section2-header" data-aos="fade-up" data-aos-duration="1000">
+    <h1>Meet Our Team</h1>
+  </header>
+  <br>
+  <br>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <div class="team">
+          <div class="team-img" data-aos="fade-down" data-aos-duration="1000">
+            <img src="./assets/profile1.png" width="200px" height="auto" alt="" />
+          </div>
+          <br>
+          <div class="team-text" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Sample Name</h2>
+            <p>
+              Tour Planner
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="team" >
+          <div class="team-img" data-aos="fade-down" data-aos-duration="1000">
+            <img src="./assets/profile2.png" width="200px" height="auto" alt="" />
+          </div>
+          <br>
+          <div class="team-text" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Sample Name</h2>
+            <p>
+              Tour Planner
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="banner">
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="banner-text" data-aos="fade-up" data-aos-duration="1000">
+          <h2>
+            Need to <span style="color: var(--red);">talk</span> to us?
+          </h2>
+          
+          <br>
+          <a href="" class="contact-but">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="footer-text">
+          <h5>About Us</h5>
+
+          <p>Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!</p>
+        </div>
+        <br>
+        <div class="footer-text">
+          <h5>Socials</h5>
+          <div class="footer-socials" style="display: flex; gap: 20px;">
+            <a href="">
+              <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 24C44 12.96 35.04 4 24 4C12.96 4 4 12.96 4 24C4 33.68 10.88 41.74 20 43.6V30H16V24H20V19C20 15.14 23.14 12 27 12H32V18H28C26.9 18 26 18.9 26 20V24H32V30H26V43.9C36.1 42.9 44 34.38 44 24Z" fill="white"/>
+              </svg>
+                
+            </a>
+            <a href="">
+              <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 6C10.478 6 6 10.478 6 16V32C6 37.522 10.478 42 16 42H32C37.522 42 42 37.522 42 32V16C42 10.478 37.522 6 32 6H16ZM36 10C37.104 10 38 10.896 38 12C38 13.104 37.104 14 36 14C34.896 14 34 13.104 34 12C34 10.896 34.896 10 36 10ZM24 14C29.522 14 34 18.478 34 24C34 29.522 29.522 34 24 34C18.478 34 14 29.522 14 24C14 18.478 18.478 14 24 14ZM24 18C22.4087 18 20.8826 18.6321 19.7574 19.7574C18.6321 20.8826 18 22.4087 18 24C18 25.5913 18.6321 27.1174 19.7574 28.2426C20.8826 29.3679 22.4087 30 24 30C25.5913 30 27.1174 29.3679 28.2426 28.2426C29.3679 27.1174 30 25.5913 30 24C30 22.4087 29.3679 20.8826 28.2426 19.7574C27.1174 18.6321 25.5913 18 24 18Z" fill="white"/>
+                </svg>
+                
+                
+            </a>
+            <a href="">
+              <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 4V8H19.0898C17.7138 8 17.0221 9.66272 17.9961 10.6367L22.9062 15.5469C23.5082 16.1489 24.4918 16.1489 25.0938 15.5469L30.0039 10.6367C30.9779 9.66272 30.2862 8 28.9102 8H26V4H22ZM8 8C5.79 8 4 9.79 4 12V36C4 38.21 5.79 40 8 40H40C42.21 40 44 38.21 44 36V12C44 9.79 42.21 8 40 8H36C35.47 8 34.9599 8.20994 34.5859 8.58594C33.3259 9.84594 34.218 12 36 12H40V16.0039L25.043 25.3477C24.405 25.7457 23.597 25.7457 22.957 25.3477L8 16.0039V12H12C13.782 12 14.6741 9.84594 13.4141 8.58594C13.0401 8.20994 12.53 8 12 8H8Z" fill="white"/>
+                </svg>
+                
+                
+            </a>
+            
+          </div>
+
+          
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="footer-text">
+          <h5>Discover</h5>
+
+          <ul style="display: flex; gap: 50px; padding: 0;">
+            <li><a href="">Home</a></li>
+            <li><a href="">Destinations</a></li>
+            <li><a href="">Holidays</a></li>
+            <li><a href="">Offers</a></li>
+          </ul>
+        </div>
+        <br>
+        <br>
+
+        <div class="footer-text">
+          <h5>Don’t Wait Any Longer. Contact Us!</h5>
+
+          <p>(123) 456-7890 / Customer Support</p>
+
+          
+        </div>
+        
+      </div>
+
+
+    </div>
+    
+  
+
+    <div class="row">
+      
+      <small style="text-align: center; margin-top: 50px;">Copyright 2022 - 365Wonders-All rights Reserved</small>
+
+
+      
+      
+
+      
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
